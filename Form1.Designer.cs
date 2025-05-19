@@ -82,30 +82,32 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("新細明體", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.Location = new System.Drawing.Point(236, 287);
+            this.label1.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label1.Location = new System.Drawing.Point(234, 326);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(27, 37);
+            this.label1.Size = new System.Drawing.Size(21, 30);
             this.label1.TabIndex = 7;
             this.label1.Text = ":";
             this.label1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // cmbMin
             // 
-            this.cmbMin.Font = new System.Drawing.Font("新細明體", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.cmbMin.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.cmbMin.FormattingEnabled = true;
-            this.cmbMin.Location = new System.Drawing.Point(302, 284);
+            this.cmbMin.Location = new System.Drawing.Point(300, 323);
             this.cmbMin.Name = "cmbMin";
-            this.cmbMin.Size = new System.Drawing.Size(150, 45);
+            this.cmbMin.Size = new System.Drawing.Size(150, 38);
             this.cmbMin.TabIndex = 6;
             // 
             // cmbHour
             // 
-            this.cmbHour.Font = new System.Drawing.Font("新細明體", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.cmbHour.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.cmbHour.FormattingEnabled = true;
-            this.cmbHour.Location = new System.Drawing.Point(14, 284);
+            this.cmbHour.Items.AddRange(new object[] {
+            "00"});
+            this.cmbHour.Location = new System.Drawing.Point(12, 323);
             this.cmbHour.Name = "cmbHour";
-            this.cmbHour.Size = new System.Drawing.Size(176, 45);
+            this.cmbHour.Size = new System.Drawing.Size(176, 38);
             this.cmbHour.TabIndex = 5;
             // 
             // btnCancelAlert
@@ -128,20 +130,24 @@
             // 
             // txtWeekDay
             // 
+            this.txtWeekDay.Enabled = false;
             this.txtWeekDay.Font = new System.Drawing.Font("新細明體", 48F);
             this.txtWeekDay.Location = new System.Drawing.Point(535, 153);
             this.txtWeekDay.Name = "txtWeekDay";
             this.txtWeekDay.Size = new System.Drawing.Size(354, 103);
             this.txtWeekDay.TabIndex = 2;
+            this.txtWeekDay.Text = "test";
             this.txtWeekDay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtDate
             // 
+            this.txtDate.Enabled = false;
             this.txtDate.Font = new System.Drawing.Font("新細明體", 48F);
             this.txtDate.Location = new System.Drawing.Point(-1, 153);
             this.txtDate.Name = "txtDate";
             this.txtDate.Size = new System.Drawing.Size(530, 103);
             this.txtDate.TabIndex = 1;
+            this.txtDate.Text = "test";
             this.txtDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTime
@@ -149,12 +155,14 @@
             this.txtTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTime.Enabled = false;
             this.txtTime.Font = new System.Drawing.Font("新細明體", 72F);
             this.txtTime.Location = new System.Drawing.Point(-1, 0);
             this.txtTime.Multiline = true;
             this.txtTime.Name = "txtTime";
             this.txtTime.Size = new System.Drawing.Size(890, 147);
             this.txtTime.TabIndex = 0;
+            this.txtTime.Text = "test";
             this.txtTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tabPage2
@@ -176,6 +184,10 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "倒數";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // timerClcok
+            // 
+            this.timerClcok.Tick += new System.EventHandler(this.timerClcok_Tick);
             // 
             // Form1
             // 
